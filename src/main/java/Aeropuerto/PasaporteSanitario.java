@@ -1,8 +1,16 @@
 package Aeropuerto;
 
+import java.util.Date;
+
 public class PasaporteSanitario {
 	private boolean resultadoPCR;
 	private Date fechaTest;
+
+	public PasaporteSanitario(boolean resultadoPCR, Date fechaTest) {
+		this.resultadoPCR = resultadoPCR;
+		this.fechaTest = fechaTest;
+	}
+
 	public Pasajero pasajero;
 
 	public boolean getResultadoPCR() {
